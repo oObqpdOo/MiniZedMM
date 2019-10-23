@@ -14,13 +14,6 @@ Examples you may find helpful.
 
 # Install & Use
 
-Normal make sequence
-
-```
-make
-make install
-```
-
 Then in a new `main.cpp` file :
 
 ```c++
