@@ -1,0 +1,25 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Oct 23 12:48:21 CEST 2019
+# Command line  : sds++ -Wall -O0 -g -I../src -I../libs/sds_utils -c -fmessage-length=0 -MTsrc/node.o -Wno-unused-label -MMD -MP -MFsrc/node.d -MTsrc/node.o -o src/node.o ../src/node.cpp -sds-sys-config mz_avnet -sds-proc Standalone -sds-pf /home/bqpd/workspace_sdsoc/Platforms/mz_avnet
+# Log file      : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_node.log
+# Journal file  : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_node.jou
+# Report file   : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_node.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing source for RTL template usage
+/tools/Xilinx/SDx/2018.3/bin/rtl_template_extract  /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp  -save-query /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/src/node.rtlx  --  -c  -I../src -I../libs/sds_utils  -Wall -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__  
+    -target arm-none-eabi -mcpu=cortex-a9 -mfpu=vfpv3 -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/arm-none-eabi -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include  -std=c++11
+# Create data motion intermediate representation
+/tools/Xilinx/SDx/2018.3/bin/clang_wrapper  -I../src -I../libs/sds_utils  -Wall -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__  -target arm-none-eabi -mcpu=cortex-a9 -mfpu=vfpv3 -O0 -g       -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/arm-none-eabi -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include  -std=c++11  -emit-llvm -S /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp -o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/src/node.s
+# Compiling /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp
+arm-none-eabi-g++ -c -I../src -I../libs/sds_utils -Wall -O0 -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__ -MT/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o -MF/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.d -MT/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp -o src/node.o
+arm-none-eabi-objcopy --add-section .xdsdata=/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/node.o.xml src/node.o
+# sds++ completed at Wed Oct 23 12:48:24 CEST 2019

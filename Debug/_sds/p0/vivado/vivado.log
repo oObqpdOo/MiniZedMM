@@ -1,0 +1,1411 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 23 12:48:53 2019
+# Process ID: 27568
+# Current directory: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado
+# Command line: vivado -mode batch -notrace -source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/ipirun.tcl -messageDb /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/vivado.pb
+# Log file: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/vivado.log
+# Journal file: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/vivado.jou
+#-----------------------------------------------------------
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/ipirun.tcl -notrace
+INFO: [OCL_UTIL] internal step: creating sdx tcl hooks for implementation run
+Creating Vivado project and starting FPGA synthesis.
+INFO: [OCL_UTIL] internal step: source .local/dsa/prj/rebuild.tcl to create prj project
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: Project created:prj
+INFO: [OCL_UTIL] setting ip_repo_paths: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/iprepo/repo /tools/Xilinx/SDx/2018.3/data/ip/xilinx /tools/Xilinx/SDx/2018.3/data/cache/xilinx .local/dsa/ipcache /tools/Xilinx/SDx/2018.3/data/ip
+INFO: [OCL_UTIL] internal step: update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/iprepo/repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/tools/Xilinx/SDx/2018.3/data/ip/xilinx'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/.local/dsa/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/ip'.
+INFO: [OCL_UTIL] internal step: config_ip_cache -use_cache_location /home/bqpd/workspace_sdsoc/ip_cache
+INFO: [OCL_UTIL] internal step: open_bd_design -auto_upgrade [get_files mz_avnet.bd]
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <mz_avnet> from BD file </home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/mz_avnet.bd>
+INFO: [OCL_UTIL] internal step: source .local/top.bd.tcl
+INFO: [OCL_UTIL] internal step: save_bd_design
+Wrote  : </home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/mz_avnet.bd> 
+INFO: [OCL_UTIL] internal step: inserting profiling and debug cores
+--- DEBUG: bus_sp_tags = 
+--- DEBUG: bus_sp_indeces = 
+--- DEBUG: vbnv = em.avnet.com:av:mz_avnet:1.0, version = 1.0, old DSA = false, 2018.2 DSA = false
+--- DEBUG: Unable to find AXI-Lite interconnect.
+--- DEBUG: Using default values: BUS_SP_TAGS {} BUS_SP_INDECES {} SLR_ASSIGNMENT SLR0 HOST_MASTERS {} DEDICATED_MASTER true AXIMM_MASTER regslice_data_periph_M_AXI MONITOR_CLOCK clkwiz_kernel_clk_out1 MONITOR_RESET memory_subsystem/aresetn AXILITE_INTERCONNECT interconnect_axilite_user_slr0 AXILITE_MASTER interconnect_axilite_user_slr0/M00_AXI TRACE_CLOCK dma_pcie_axi_aclk TRACE_RESET slr0/reset_controllers/psreset_gate_pr_data_interconnect_aresetn
+--- DEBUG: Inserting profiling cores...
+--- DEBUG DSA-Specific Information used for debug/profiling:
+--- DEBUG     host masters = 
+--- DEBUG     AXI-lite master = 
+--- DEBUG     AXI full master = regslice_data_periph_M_AXI (dedicated: true)
+--- DEBUG     trace: clock = , reset = 
+--- DEBUG     monitor: clock = , reset = 
+--- DEBUG     new clocking structure = true
+--- DEBUG: Adding profiling of host and kernel masters...
+CRITICAL WARNING: Empty profile data. Ignoring profiling.
+--- DEBUG: Inserting SystemILA debug cores...
+--- DEBUG: insert_chipscope_debug: No chipscope_debugs dict name - nothing to insert
+--- DEBUG: Connecting BSCAN interfaces of compute unit(s)
+INFO: [OCL_UTIL] internal step: assign_bd_address
+INFO: [OCL_UTIL] internal step: bd::util_cmd set_bd_source SDSoC [current_bd_design]
+INFO: [OCL_UTIL] internal step: save_bd_design
+INFO: [OCL_UTIL] internal step: writing address_map.xml
+INFO: [OCL_UTIL] internal step: writing debug ip layout
+INFO: [OCL_UTIL] internal step: generate_target all [get_files mz_avnet.bd]
+Wrote  : </home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/mz_avnet.bd> 
+VHDL Output written to : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.v
+VHDL Output written to : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/sim/mz_avnet.v
+VHDL Output written to : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/hdl/mz_avnet_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sds_irq_const .
+Exporting to file /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/hw_handoff/mz_avnet.hwh
+Generated Block Design Tcl file /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/hw_handoff/mz_avnet_bd.tcl
+Generated Hardware Definition File /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.hwdef
+generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1652.152 ; gain = 86.090 ; free physical = 4371 ; free virtual = 9235
+INFO: [OCL_UTIL] internal step: config_ip_cache -export [get_ips -all -of_object [get_files mz_avnet.bd]]
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mz_avnet_proc_sys_reset_0_0, cache-ID = aeba18b68a73cd9b.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mz_avnet_proc_sys_reset_1_0, cache-ID = 3b86def427716dd7.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mz_avnet_processing_system7_0_0, cache-ID = 9a126af8c6d817b5.
+INFO: [OCL_UTIL] internal step: write_hwdef -force -file output/system.hdf
+INFO: [OCL_UTIL] internal step: add_files -norecurse [make_wrapper -top -files [get_files mz_avnet.bd]]
+INFO: [OCL_UTIL] internal step: writing user synth clock constraints in output/mz_avnet_ooc_copy.xdc
+INFO: [OCL_UTIL] internal step: add_files output/mz_avnet_ooc_copy.xdc -fileset [current_fileset -constrset]
+INFO: [OCL_UTIL] set_property used_in synthesis implementation out_of_context /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/output/mz_avnet_ooc_copy.xdc
+INFO: [OCL_UTIL] set_property processing_order early /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/output/mz_avnet_ooc_copy.xdc
+INFO: [OCL_UTIL] internal step: source scripts/_vivado_report_commands.tcl
+INFO: [OCL_UTIL] internal step: source scripts/_vivado_synth_props.tcl
+INFO: [OCL_UTIL] internal step: source scripts/_vivado_impl_props.tcl
+INFO: [OCL_UTIL] internal step: launch_runs synth_1 -jobs 2  
+[Wed Oct 23 12:49:30 2019] Launched synth_1...
+Run output will be captured here: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/runme.log
+[Wed Oct 23 12:49:31 2019] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log mz_avnet_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mz_avnet_wrapper.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mz_avnet_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/iprepo/repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/tools/Xilinx/SDx/2018.3/data/ip/xilinx'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/.local/dsa/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top mz_avnet_wrapper -part xc7z007sclg225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27774 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1484.848 ; gain = 13.832 ; free physical = 3791 ; free virtual = 8708
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mz_avnet_wrapper' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/mz_avnet_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'mz_avnet' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.v:13]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.v:84]
+INFO: [Synth 8-6157] synthesizing module 'mz_avnet_proc_sys_reset_0_0' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27753-bqpd-ThinkPad-T450s/realtime/mz_avnet_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mz_avnet_proc_sys_reset_0_0' (1#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27753-bqpd-ThinkPad-T450s/realtime/mz_avnet_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'mz_avnet_proc_sys_reset_0_0' requires 10 connections, but only 5 given [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.v:84]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.v:90]
+INFO: [Synth 8-6157] synthesizing module 'mz_avnet_proc_sys_reset_1_0' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27753-bqpd-ThinkPad-T450s/realtime/mz_avnet_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mz_avnet_proc_sys_reset_1_0' (2#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27753-bqpd-ThinkPad-T450s/realtime/mz_avnet_proc_sys_reset_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_1' of module 'mz_avnet_proc_sys_reset_1_0' requires 10 connections, but only 5 given [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.v:90]
+INFO: [Synth 8-6157] synthesizing module 'mz_avnet_processing_system7_0_0' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27753-bqpd-ThinkPad-T450s/realtime/mz_avnet_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mz_avnet_processing_system7_0_0' (3#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-27753-bqpd-ThinkPad-T450s/realtime/mz_avnet_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'mz_avnet_processing_system7_0_0' requires 50 connections, but only 34 given [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.v:96]
+INFO: [Synth 8-6157] synthesizing module 'mz_avnet_sds_irq_const_0' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_sds_irq_const_0/synth/mz_avnet_sds_irq_const_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (4#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mz_avnet_sds_irq_const_0' (5#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_sds_irq_const_0/synth/mz_avnet_sds_irq_const_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'mz_avnet_xlconcat_0_0' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_xlconcat_0_0/synth/mz_avnet_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (6#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'mz_avnet_xlconcat_0_0' (7#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_xlconcat_0_0/synth/mz_avnet_xlconcat_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'mz_avnet' (8#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/synth/mz_avnet.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'mz_avnet_wrapper' (9#1) [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/mz_avnet_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In31[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1529.598 ; gain = 58.582 ; free physical = 3736 ; free virtual = 8657
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1529.598 ; gain = 58.582 ; free physical = 3727 ; free virtual = 8645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1529.598 ; gain = 58.582 ; free physical = 3728 ; free virtual = 8645
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc] for cell 'mz_avnet_i/processing_system7_0'
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc] for cell 'mz_avnet_i/processing_system7_0'
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0_in_context.xdc] for cell 'mz_avnet_i/proc_sys_reset_0'
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0_in_context.xdc] for cell 'mz_avnet_i/proc_sys_reset_0'
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0_in_context.xdc] for cell 'mz_avnet_i/proc_sys_reset_1'
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0_in_context.xdc] for cell 'mz_avnet_i/proc_sys_reset_1'
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1751.211 ; gain = 0.000 ; free physical = 3471 ; free virtual = 8391
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1751.211 ; gain = 0.000 ; free physical = 3471 ; free virtual = 8391
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1751.211 ; gain = 0.000 ; free physical = 3471 ; free virtual = 8391
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1751.211 ; gain = 280.195 ; free physical = 3510 ; free virtual = 8432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1751.211 ; gain = 280.195 ; free physical = 3510 ; free virtual = 8432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property DONT_TOUCH = true for mz_avnet_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mz_avnet_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mz_avnet_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mz_avnet_i/proc_sys_reset_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mz_avnet_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mz_avnet_i/sds_irq_const. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1751.211 ; gain = 280.195 ; free physical = 3514 ; free virtual = 8437
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1751.211 ; gain = 280.195 ; free physical = 3513 ; free virtual = 8436
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1751.211 ; gain = 280.195 ; free physical = 3503 ; free virtual = 8428
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mz_avnet_i/processing_system7_0/FCLK_CLK0' to pin 'mz_avnet_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mz_avnet_i/processing_system7_0/FCLK_CLK1' to pin 'mz_avnet_i/processing_system7_0/bbstub_FCLK_CLK1/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1790.211 ; gain = 319.195 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1790.211 ; gain = 319.195 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1800.227 ; gain = 329.211 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1800.227 ; gain = 329.211 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1800.227 ; gain = 329.211 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1800.227 ; gain = 329.211 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1800.227 ; gain = 329.211 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1800.227 ; gain = 329.211 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1800.227 ; gain = 329.211 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |mz_avnet_proc_sys_reset_0_0     |         1|
+|2     |mz_avnet_proc_sys_reset_1_0     |         1|
+|3     |mz_avnet_processing_system7_0_0 |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |mz_avnet_proc_sys_reset_0_0     |     1|
+|2     |mz_avnet_proc_sys_reset_1_0     |     1|
+|3     |mz_avnet_processing_system7_0_0 |     1|
++------+--------------------------------+------+
+
+Report Instance Areas: 
++------+------------------+-------------------------+------+
+|      |Instance          |Module                   |Cells |
++------+------------------+-------------------------+------+
+|1     |top               |                         |    68|
+|2     |  mz_avnet_i      |mz_avnet                 |    68|
+|3     |    sds_irq_const |mz_avnet_sds_irq_const_0 |     0|
+|4     |    xlconcat_0    |mz_avnet_xlconcat_0_0    |     0|
++------+------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1800.227 ; gain = 329.211 ; free physical = 3351 ; free virtual = 8312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1800.227 ; gain = 107.598 ; free physical = 3413 ; free virtual = 8371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1800.234 ; gain = 329.211 ; free physical = 3424 ; free virtual = 8382
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1806.227 ; gain = 0.000 ; free physical = 3352 ; free virtual = 8309
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1810.227 ; gain = 339.379 ; free physical = 3402 ; free virtual = 8359
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1810.227 ; gain = 0.000 ; free physical = 3402 ; free virtual = 8359
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/mz_avnet_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mz_avnet_wrapper_utilization_synth.rpt -pb mz_avnet_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 12:50:12 2019...
+[Wed Oct 23 12:50:13 2019] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1799.320 ; gain = 0.000 ; free physical = 4066 ; free virtual = 9020
+INFO: [OCL_UTIL] internal step: log_generated_reports for synthesis 'output/generated_reports.log'
+INFO: [OCL_UTIL] internal step: launched run synth_1
+INFO: [OCL_UTIL] internal step: launch_runs impl_1 -to_step write_bitstream 
+[Wed Oct 23 12:50:14 2019] Launched impl_1...
+Run output will be captured here: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/runme.log
+[Wed Oct 23 12:50:14 2019] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log mz_avnet_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source mz_avnet_wrapper.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mz_avnet_wrapper.tcl -notrace
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/scripts/_full_init_pre.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/iprepo/repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/tools/Xilinx/SDx/2018.3/data/ip/xilinx'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/.local/dsa/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/SDx/2018.3/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+Command: link_design -top mz_avnet_wrapper -part xc7z007sclg225-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0.dcp' for cell 'mz_avnet_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0.dcp' for cell 'mz_avnet_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0.dcp' for cell 'mz_avnet_i/processing_system7_0'
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0.xdc] for cell 'mz_avnet_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_processing_system7_0_0/mz_avnet_processing_system7_0_0.xdc] for cell 'mz_avnet_i/processing_system7_0/inst'
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0_board.xdc] for cell 'mz_avnet_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0_board.xdc] for cell 'mz_avnet_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0.xdc] for cell 'mz_avnet_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_0_0/mz_avnet_proc_sys_reset_0_0.xdc] for cell 'mz_avnet_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0_board.xdc] for cell 'mz_avnet_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0_board.xdc] for cell 'mz_avnet_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0.xdc] for cell 'mz_avnet_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/mz_avnet/ip/mz_avnet_proc_sys_reset_1_0/mz_avnet_proc_sys_reset_1_0.xdc] for cell 'mz_avnet_i/proc_sys_reset_1/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1813.328 ; gain = 0.000 ; free physical = 3489 ; free virtual = 8445
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+14 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1813.328 ; gain = 325.625 ; free physical = 3489 ; free virtual = 8445
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/scripts/_full_init_post.tcl
+Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/output/_user_impl_clk.xdc]
+Finished Parsing XDC File [/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/output/_user_impl_clk.xdc]
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/scripts/_full_opt_pre.tcl
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1813.328 ; gain = 0.000 ; free physical = 3500 ; free virtual = 8470
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 16e4c5c7b
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2133.855 ; gain = 320.527 ; free physical = 3379 ; free virtual = 8293
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 187f9ae8c
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3336 ; free virtual = 8226
+INFO: [Opt 31-389] Phase Retarget created 4 cells and removed 30 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 187f9ae8c
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3336 ; free virtual = 8226
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 23288ec55
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3336 ; free virtual = 8226
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 172 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 23288ec55
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3336 ; free virtual = 8226
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 148868f10
+
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3336 ; free virtual = 8225
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 148868f10
+
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.29 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3336 ; free virtual = 8225
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               4  |              30  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |             172  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3336 ; free virtual = 8225
+Ending Logic Optimization Task | Checksum: 148868f10
+
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3336 ; free virtual = 8225
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 148868f10
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8225
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 148868f10
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8225
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8225
+Ending Netlist Obfuscation Task | Checksum: 148868f10
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2210.855 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8225
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2210.855 ; gain = 397.527 ; free physical = 3339 ; free virtual = 8225
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/scripts/_full_opt_post.tcl
+INFO: [runtcl-4] Executing : report_drc -file mz_avnet_wrapper_drc_opted.rpt -pb mz_avnet_wrapper_drc_opted.pb -rpx mz_avnet_wrapper_drc_opted.rpx
+Command: report_drc -file mz_avnet_wrapper_drc_opted.rpt -pb mz_avnet_wrapper_drc_opted.pb -rpx mz_avnet_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Coretcl 2-168] The results of DRC are in file /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/mz_avnet_wrapper_drc_opted.rpt.
+report_drc completed successfully
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/scripts/_full_place_pre.tcl
+CRITICAL WARNING: [Vivado 12-4430] You are lowering the severity from an ERROR. This can potentially lead to board damage or other functionality issues on hardware. If this is not desired, please run 'reset_property SEVERITY [get_drc_checks HDPR-5]' to undo this change.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8222
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e7d26967
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8222
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8222
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e7d26967
+
+Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.70 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3337 ; free virtual = 8219
+
+Phase 1.3 Build Placer Netlist Model
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+Phase 1.3 Build Placer Netlist Model | Checksum: ffb4c9b9
+
+Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8221
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: ffb4c9b9
+
+Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8221
+Phase 1 Placer Initialization | Checksum: ffb4c9b9
+
+Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8221
+
+Phase 2 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8221
+Phase 2 Final Placement Cleanup | Checksum: ffb4c9b9
+
+Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8221
+INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+Ending Placer Task | Checksum: e7d26967
+
+Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3339 ; free virtual = 8221
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 173 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/scripts/_full_place_post.tcl
+INFO: [runtcl-4] Executing : report_io -file mz_avnet_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3334 ; free virtual = 8216
+INFO: [runtcl-4] Executing : report_utilization -file mz_avnet_wrapper_utilization_placed.rpt -pb mz_avnet_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file mz_avnet_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3338 ; free virtual = 8220
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 6331a1a9 ConstDB: 0 ShapeSum: 84a0c7be RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1 Build RT Design | Checksum: aa528195
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3287 ; free virtual = 8167
+Post Restoration Checksum: NetGraph: 20eb1a2 NumContArr: a843cff3 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 2.1 Create Timer | Checksum: aa528195
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2298.898 ; gain = 0.000 ; free physical = 3284 ; free virtual = 8163
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: aa528195
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2307.496 ; gain = 8.598 ; free physical = 3269 ; free virtual = 8148
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: aa528195
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2307.496 ; gain = 8.598 ; free physical = 3269 ; free virtual = 8148
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 142533b21
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2313.508 ; gain = 14.609 ; free physical = 3266 ; free virtual = 8146
+Phase 2 Router Initialization | Checksum: 142533b21
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2313.508 ; gain = 14.609 ; free physical = 3266 ; free virtual = 8146
+
+Phase 3 Initial Routing
+ Number of Nodes with overlaps = 0
+Phase 3 Initial Routing | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8145
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+Phase 4.1 Global Iteration 0 | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8145
+Phase 4 Rip-up And Reroute | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8145
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8145
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+Phase 5 Delay and Skew Optimization | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+Phase 6.1 Hold Fix Iter | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+Phase 6 Post Hold Fix | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+
+Phase 10 Post Router Timing
+Phase 10 Post Router Timing | Checksum: 113d31bed
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3265 ; free virtual = 8144
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3279 ; free virtual = 8159
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 273 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 2316.512 ; gain = 17.613 ; free physical = 3279 ; free virtual = 8159
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/scripts/_full_route_post.tcl
+INFO: [OCL_UTIL] clock frequency scaling is disabled for this flow, perform the normal timing check instead
+INFO: [OCL_UTIL] get_timing_paths -quiet -slack_lesser_than 0
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.512 ; gain = 0.000 ; free physical = 3279 ; free virtual = 8159
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2316.512 ; gain = 0.000 ; free physical = 3272 ; free virtual = 8154
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.512 ; gain = 0.000 ; free physical = 3275 ; free virtual = 8157
+INFO: [Common 17-1381] The checkpoint '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/mz_avnet_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file mz_avnet_wrapper_drc_routed.rpt -pb mz_avnet_wrapper_drc_routed.pb -rpx mz_avnet_wrapper_drc_routed.rpx
+Command: report_drc -file mz_avnet_wrapper_drc_routed.rpt -pb mz_avnet_wrapper_drc_routed.pb -rpx mz_avnet_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/mz_avnet_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file mz_avnet_wrapper_methodology_drc_routed.rpt -pb mz_avnet_wrapper_methodology_drc_routed.pb -rpx mz_avnet_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file mz_avnet_wrapper_methodology_drc_routed.rpt -pb mz_avnet_wrapper_methodology_drc_routed.pb -rpx mz_avnet_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/mz_avnet_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file mz_avnet_wrapper_power_routed.rpt -pb mz_avnet_wrapper_power_summary_routed.pb -rpx mz_avnet_wrapper_power_routed.rpx
+Command: report_power -file mz_avnet_wrapper_power_routed.rpt -pb mz_avnet_wrapper_power_summary_routed.pb -rpx mz_avnet_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+69 Infos, 273 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file mz_avnet_wrapper_route_status.rpt -pb mz_avnet_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file mz_avnet_wrapper_timing_summary_routed.rpt -pb mz_avnet_wrapper_timing_summary_routed.pb -rpx mz_avnet_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [runtcl-4] Executing : report_incremental_reuse -file mz_avnet_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file mz_avnet_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file mz_avnet_wrapper_bus_skew_routed.rpt -pb mz_avnet_wrapper_bus_skew_routed.pb -rpx mz_avnet_wrapper_bus_skew_routed.rpx
+Command: write_bitstream -force mz_avnet_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 4 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./mz_avnet_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Oct 23 12:51:25 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+85 Infos, 359 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2683.473 ; gain = 310.934 ; free physical = 3307 ; free virtual = 8184
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 12:51:25 2019...
+[Wed Oct 23 12:51:30 2019] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.85 ; elapsed = 00:01:16 . Memory (MB): peak = 1814.773 ; gain = 0.000 ; free physical = 4441 ; free virtual = 9319
+INFO: [OCL_UTIL] internal step: log_generated_reports for implementation 'output/generated_reports.log'
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 12:51:30 2019...

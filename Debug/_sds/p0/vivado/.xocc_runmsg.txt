@@ -1,0 +1,2 @@
+creating FPGA bitstream.
+Log file: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/vivado.log

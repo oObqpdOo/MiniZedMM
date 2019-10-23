@@ -1,0 +1,107 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Oct 23 12:48:24 CEST 2019
+# Command line  : sds++ --remote_ip_cache /home/bqpd/workspace_sdsoc/ip_cache -o MiniZedMM.elf ./src/dual.o ./src/gradient.o ./src/graph.o ./src/main.o ./src/node.o -dmclkid 0 -sds-sys-config mz_avnet -sds-proc Standalone -sds-pf /home/bqpd/workspace_sdsoc/Platforms/mz_avnet
+# Log file      : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds.log
+# Journal file  : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds.jou
+# Report file   : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing object files
+arm-none-eabi-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/dual.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xdinfo.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/dual.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xddata.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/dual.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/dual.o.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/gradient.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xdinfo.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/gradient.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xddata.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/gradient.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/gradient.o.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/graph.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xdinfo.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/graph.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xddata.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/graph.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/graph.o.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/main.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xdinfo.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/main.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xddata.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/main.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/main.o.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xdinfo.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/xddata.xml
+arm-none-eabi-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.data/node.o.xml
+/tools/Xilinx/SDx/2018.3/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/.Xil/mz_avnet.hpfm    -o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.cdb/xd_ip_db.xml  
+# Generating data motion network
+/tools/Xilinx/SDx/2018.3/bin/llvm-link -o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/sds_all.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/./src/dual.s /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/./src/gradient.s /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/./src/graph.s /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/./src/main.s /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/./src/node.s
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm
+/tools/Xilinx/SDx/2018.3/bin/XidanePass  --dmclkid 0  --repo /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.cdb/xd_ip_db.xml  --dmdb /tools/Xilinx/SDx/2018.3/data/DM.db   -os standalone -processor cortex-a9 -partition 0  
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+# Creating block diagram (BD)
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/.xsd
+/tools/Xilinx/SDx/2018.3/bin/sdx_link  -cf-system /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/apsys_0.xml  -cf-db  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.cdb/xd_ip_db.xml  -xpfm /home/bqpd/workspace_sdsoc/Platforms/mz_avnet/mz_avnet.xpfm   -multi-clks -trace-buffer 1024 -os baremetal -quiet
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+cd _sds/p0/.cf_work
+/tools/Xilinx/SDx/2018.3/bin/cf2sw  -i /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/apsys_0.xml  -r /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.cdb/xd_ip_db.xml  -pollMode 0 -mc
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+# Rewrite caller functions
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+# Prepare hardware access API functions
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+# Create accelerator stub functions
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+# Compile hardware access API functions
+arm-none-eabi-gcc   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -c  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/portinfo.c
+arm-none-eabi-g++  -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -c  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/cf_stub.c
+arm-none-eabi-ar crs /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/libxlnk_stub.a /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/portinfo.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/cf_stub.o
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+# Compile accelerator stub functions
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+arm-none-eabi-ar crs /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/libMiniZedMM.a /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/portinfo.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/cf_stub.o 
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp
+/tools/Xilinx/SDK/2018.3/bin/hsi  -mode batch -notrace -quiet -source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/create_bsp.tcl
+# Create board support package library
+/tools/Xilinx/SDx/2018.3/bin/xsct  -sdx -quiet /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/create_bsp_post.tcl
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+# Preliminary link application ELF
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,--build-id=none -specs=/tools/Xilinx/SDx/2018.3/data/toolchain/aarch32-none.spec -Wl,-T -Wl,/home/bqpd/workspace_sdsoc/Platforms/mz_avnet/sw/mz_avnet/Standalone/lscript.ld   /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/dual.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/gradient.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/graph.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/main.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/portinfo.o  -L /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/ps7_cortexa9_0/lib   -L/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs -Wl,--start-group -lstdc++ -Wl,--end-group -Wl,--start-group   -lsds_link  -L/tools/Xilinx/SDx/2018.3/target/aarch32-none/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/MiniZedMM.elf -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+
+arm-none-eabi-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/MiniZedMM.elf
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+# Enable generation of hardware programming files
+# Enable generation of boot files
+# Calling VPL
+/tools/Xilinx/SDx/2018.3/bin/vpl   --iprepo /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/iprepo/repo  --iprepo /tools/Xilinx/SDx/2018.3/data/ip/xilinx  --platform /home/bqpd/workspace_sdsoc/Platforms/mz_avnet/mz_avnet.xpfm  --temp_dir /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0  --output_dir /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vpl  --input_file /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels none --webtalk_flag SDSoC  --remote_ip_cache /home/bqpd/workspace_sdsoc/ip_cache --xp "param:compiler.deleteDefaultReportConfigs=false" 
+cd _sds/p0/.cf_work
+/tools/Xilinx/SDx/2018.3/bin/cf2sw  -i /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/apsys_0.xml  -r /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 0 -mc
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+# Software tracing enabled
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+# Compile hardware access API functions
+arm-none-eabi-gcc   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -c  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/portinfo.c
+arm-none-eabi-g++  -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include -c  /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/cf_stub.c
+arm-none-eabi-ar crs /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/libxlnk_stub.a /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/portinfo.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/cf_stub.o
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+arm-none-eabi-ar crs /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/libMiniZedMM.a /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/portinfo.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/cf_stub.o 
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp
+/tools/Xilinx/SDK/2018.3/bin/hsi  -mode batch -notrace -quiet -source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/create_bsp.tcl
+# Create board support package library
+/tools/Xilinx/SDx/2018.3/bin/xsct  -sdx -quiet /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/create_bsp_post.tcl
+cd /home/bqpd/workspace_sdsoc/MiniZedMM/Debug
+# Link application ELF file
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,--build-id=none -specs=/tools/Xilinx/SDx/2018.3/data/toolchain/aarch32-none.spec -Wl,-T -Wl,/home/bqpd/workspace_sdsoc/Platforms/mz_avnet/sw/mz_avnet/Standalone/lscript.ld   /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/dual.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/gradient.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/graph.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/main.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/portinfo.o  -L /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/ps7_cortexa9_0/lib   -L/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs -Wl,--start-group -lstdc++ -Wl,--end-group -Wl,--start-group     -L/tools/Xilinx/SDx/2018.3/target/aarch32-none/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/MiniZedMM.elf -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+
+arm-none-eabi-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/MiniZedMM.elf
+# All user specified timing constraints are met.
+# sds++ completed at Wed Oct 23 12:51:52 CEST 2019

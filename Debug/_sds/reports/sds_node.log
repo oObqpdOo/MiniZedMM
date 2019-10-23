@@ -1,0 +1,85 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Oct 23 12:48:21 CEST 2019
+# Command line  : sds++ -Wall -O0 -g -I../src -I../libs/sds_utils -c -fmessage-length=0 -MTsrc/node.o -Wno-unused-label -MMD -MP -MFsrc/node.d -MTsrc/node.o -o src/node.o ../src/node.cpp -sds-sys-config mz_avnet -sds-proc Standalone -sds-pf /home/bqpd/workspace_sdsoc/Platforms/mz_avnet
+# Log file      : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_node.log
+# Journal file  : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_node.jou
+# Report file   : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_node.rpt
+#-----------------------------------------------------------
+
+Analyzing source for RTL template usage
+/tools/Xilinx/SDx/2018.3/bin/rtl_template_extract  /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp  -save-query /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/src/node.rtlx  --  -c  -I../src -I../libs/sds_utils  -Wall -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__  
+    -target arm-none-eabi -mcpu=cortex-a9 -mfpu=vfpv3 -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/arm-none-eabi -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include  -std=c++11
+Create data motion intermediate representation
+/tools/Xilinx/SDx/2018.3/bin/clang_wrapper  -I../src -I../libs/sds_utils  -Wall -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__  -target arm-none-eabi -mcpu=cortex-a9 -mfpu=vfpv3 -O0 -g       -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/arm-none-eabi -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include  -std=c++11  -emit-llvm -S /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp -o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/src/node.s
+/home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp:243:33: warning: using integer absolute value function 'abs' when argument is of floating point type [-Wabsolute-value]
+        int sign = n==0 ? 0 : n/::abs(n);
+                                ^
+/home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp:243:33: note: use function 'std::abs' instead
+        int sign = n==0 ? 0 : n/::abs(n);
+                                ^~~~~
+                                std::abs
+/home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp:244:39: warning: using integer absolute value function 'abs' when argument is of floating point type [-Wabsolute-value]
+        return MonadicOperationResult(::abs(n), sign);
+                                      ^
+/home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp:244:39: note: use function 'std::abs' instead
+        return MonadicOperationResult(::abs(n), sign);
+                                      ^~~~~
+                                      std::abs
+Compiling /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp
+arm-none-eabi-g++ -c -I../src -I../libs/sds_utils -Wall -O0 -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__ -MT/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o -MF/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.d -MT/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/node.o -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp -o src/node.o
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.h:5,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.h:7,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp:1:
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = double*; _ForwardIterator = double*; _Allocator = std::allocator<double>]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:312:69: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+   _GLIBCXX_MAKE_MOVE_IF_NOEXCEPT_ITERATOR(__last), __result, __alloc);
+                                                                     ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<double*>; _ForwardIterator = double*; _Tp = double]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:287:5: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+     __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+     ^~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:287:5: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:289:63: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+     { return std::uninitialized_copy(__first, __last, __result); }
+                                                               ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<double*>; _ForwardIterator = double*]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:115:5: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+     uninitialized_copy(_InputIterator __first, _InputIterator __last,
+     ^~~~~~~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:115:5: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:134:41: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+  __uninit_copy(__first, __last, __result);
+                                         ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In static member function 'static _ForwardIterator std::__uninitialized_copy<true>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<double*>; _ForwardIterator = double*]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:99:9: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+         __uninit_copy(_InputIterator __first, _InputIterator __last,
+         ^~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:99:9: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:101:53: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+         { return std::copy(__first, __last, __result); }
+                                                     ^
+                 from /tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/ios:40,
+                 from /tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/ostream:38,
+                 from /tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/iostream:39,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.h:5,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp:1:
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_algobase.h: In function '_OI std::copy(_II, _II, _OI) [with _II = std::move_iterator<double*>; _OI = double*]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_algobase.h:446:5: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+     copy(_II __first, _II __last, _OI __result)
+     ^~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_algobase.h:446:5: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+                 from /tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/char_traits.h:39,
+                 from /tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/ios:40,
+                 from /tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/ostream:38,
+                 from /tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/iostream:39,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.h:5,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/node.cpp:1:
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_iterator.h: In function 'decltype (std::__miter_base(__it.base())) std::__miter_base(std::move_iterator<_IteratorL>) [with _Iterator = double*]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_iterator.h:1241:5: note: parameter passing for argument of type 'std::move_iterator<double*>' changed in GCC 7.1
+     __miter_base(move_iterator<_Iterator> __it)
+     ^~~~~~~~~~~~
+arm-none-eabi-objcopy --add-section .xdsdata=/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/node.o.xml src/node.o
+sds++ log file saved as /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_node.log
+sds++ completed at Wed Oct 23 12:48:24 CEST 2019

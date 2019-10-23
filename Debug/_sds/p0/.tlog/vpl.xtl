@@ -1,0 +1,297 @@
+<ENTRY>
+{
+    "EntryID": "1",
+    "Type": "CmdStep",
+    "DateTimestamp": "2019-Oct-23 12:48:52.593000",
+    "TimestampMillis": "46132593",
+    "Payload": {
+        "CmdStepID": "0a0807a6-26a6-45dc-bdfd-b0e616b4a231",
+        "Command": "vpl",
+        "LogFile": "\/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/p0.steps.log",
+        "CommandLine": "\/tools\/Xilinx\/SDx\/2018.3\/bin\/unwrapped\/lnx64.o\/vpl --iprepo \/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/iprepo\/repo --iprepo \/tools\/Xilinx\/SDx\/2018.3\/data\/ip\/xilinx --platform \/home\/bqpd\/workspace_sdsoc\/Platforms\/mz_avnet\/mz_avnet.xpfm --temp_dir \/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0 --output_dir \/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/vpl --input_file \/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/.xsd\/top.bd.tcl --target hw --save_temps --kernels none --webtalk_flag SDSoC --remote_ip_cache \/home\/bqpd\/workspace_sdsoc\/ip_cache --xp param:compiler.deleteDefaultReportConfigs=false ",
+        "OptionArgs": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "2",
+    "Type": "Status",
+    "DateTimestamp": "2019-Oct-23 12:48:52.593000",
+    "TimestampMillis": "46132593",
+    "Payload": {
+        "CmdStepID": "0a0807a6-26a6-45dc-bdfd-b0e616b4a231",
+        "Status": "Start"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "3",
+    "Type": "SubCmdStep",
+    "DateTimestamp": "2019-Oct-23 12:48:52.801000",
+    "TimestampMillis": "46132801",
+    "Payload": {
+        "CmdStepID": "40a514f2-6313-4321-bd70-365637ded52a",
+        "Command": "vivado",
+        "LogFile": "$LOGDIR\/..\/vivado\/vivado.log",
+        "TransactionLogFile": "",
+        "CommandLine": "\/tools\/Xilinx\/Vivado\/2018.3\/bin\/vivado -mode batch -notrace -source \/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/vivado\/ipirun.tcl -messageDb \/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/vivado\/vivado.pb",
+        "OptionArgs": [
+            "-mode",
+            "batch",
+            "-notrace",
+            "-source",
+            "\/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/vivado\/ipirun.tcl",
+            "-messageDb",
+            "\/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/vivado\/vivado.pb"
+        ]
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "4",
+    "Type": "Status",
+    "DateTimestamp": "2019-Oct-23 12:48:52.801000",
+    "TimestampMillis": "46132801",
+    "Payload": {
+        "CmdStepID": "40a514f2-6313-4321-bd70-365637ded52a",
+        "Status": "Start"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "5",
+    "Type": "Status",
+    "DateTimestamp": "2019-Oct-23 12:51:30.931000",
+    "TimestampMillis": "46290931",
+    "Payload": {
+        "CmdStepID": "40a514f2-6313-4321-bd70-365637ded52a",
+        "Status": "Passed"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "6",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.935000",
+    "TimestampMillis": "46290935",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/synth_1\/mz_avnet_wrapper_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "7",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.936000",
+    "TimestampMillis": "46290936",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_drc_opted.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_DRC",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "8",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.936000",
+    "TimestampMillis": "46290936",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_io_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_IO",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "9",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.936000",
+    "TimestampMillis": "46290936",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_utilization_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "10",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.936000",
+    "TimestampMillis": "46290936",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_utilization_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "KERNEL_UTILIZATION_PLACEMENT",
+        "KernelName": "\/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "11",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.936000",
+    "TimestampMillis": "46290936",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_control_sets_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_CONTROL_SETS",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "12",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.936000",
+    "TimestampMillis": "46290936",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_drc_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_DRC",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "13",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.936000",
+    "TimestampMillis": "46290936",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_methodology_drc_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_METHODOLOGY",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "14",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.937000",
+    "TimestampMillis": "46290937",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_power_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_POWER",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "15",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.937000",
+    "TimestampMillis": "46290937",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_route_status.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_ROUTE_STATUS",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "16",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.937000",
+    "TimestampMillis": "46290937",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_timing_summary_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "17",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.937000",
+    "TimestampMillis": "46290937",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_incremental_reuse_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_INCREMENTAL_REUSE",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "18",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.937000",
+    "TimestampMillis": "46290937",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_clock_utilization_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_CLOCK_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "19",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.937000",
+    "TimestampMillis": "46290937",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_clock_utilization_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "KERNEL_UTILIZATION_ROUTE",
+        "KernelName": "\/home\/bqpd\/workspace_sdsoc\/MiniZedMM\/Debug\/_sds\/p0\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_clock"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "20",
+    "Type": "Report",
+    "DateTimestamp": "2019-Oct-23 12:51:30.937000",
+    "TimestampMillis": "46290937",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/mz_avnet_wrapper_bus_skew_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_BUS_SKEW",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "21",
+    "Type": "Status",
+    "DateTimestamp": "2019-Oct-23 12:51:30.971000",
+    "TimestampMillis": "46290971",
+    "Payload": {
+        "CmdStepID": "0a0807a6-26a6-45dc-bdfd-b0e616b4a231",
+        "Status": "Passed"
+    }
+}
+</ENTRY>

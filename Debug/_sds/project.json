@@ -1,0 +1,7 @@
+{
+  "project" : {
+    "id" : "0",
+    "xpfmFile" : "/home/bqpd/workspace_sdsoc/Platforms/mz_avnet/mz_avnet.xpfm",
+    "sysConfig" : "mz_avnet"
+  }
+}

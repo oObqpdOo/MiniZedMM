@@ -1,0 +1,8 @@
+13:22:17 **** Incremental Build of configuration Debug for project MiniZedMM ****
+make pre-build main-build 
+sdsoc_make_clean Debug
+ 
+make: Nothing to be done for 'main-build'.
+
+13:22:17 Build Finished (took 67ms)
+

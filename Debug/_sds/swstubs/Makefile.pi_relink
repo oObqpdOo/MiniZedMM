@@ -1,0 +1,8 @@
+OUTPUT=MiniZedMM.elf
+.PHONY: relink clean
+
+relink:
+	cp MiniZedMM.elf ${OUTPUT}
+
+clean:
+	rm -f ${OUTPUT}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 23 12:48:53 2019
+# Process ID: 27568
+# Current directory: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado
+# Command line: vivado -mode batch -notrace -source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/ipirun.tcl -messageDb /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/vivado.pb
+# Log file: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/vivado.log
+# Journal file: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/vivado.jou
+#-----------------------------------------------------------
+source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/ipirun.tcl -notrace

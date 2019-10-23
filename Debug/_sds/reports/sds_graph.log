@@ -1,0 +1,88 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Oct 23 12:48:15 CEST 2019
+# Command line  : sds++ -Wall -O0 -g -I../src -I../libs/sds_utils -c -fmessage-length=0 -MTsrc/graph.o -Wno-unused-label -MMD -MP -MFsrc/graph.d -MTsrc/graph.o -o src/graph.o ../src/graph.cpp -sds-sys-config mz_avnet -sds-proc Standalone -sds-pf /home/bqpd/workspace_sdsoc/Platforms/mz_avnet
+# Log file      : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_graph.log
+# Journal file  : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_graph.jou
+# Report file   : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_graph.rpt
+#-----------------------------------------------------------
+
+Analyzing source for RTL template usage
+/tools/Xilinx/SDx/2018.3/bin/rtl_template_extract  /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.cpp  -save-query /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/src/graph.rtlx  --  -c  -I../src -I../libs/sds_utils  -Wall -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__  
+    -target arm-none-eabi -mcpu=cortex-a9 -mfpu=vfpv3 -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/arm-none-eabi -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include  -std=c++11
+Create data motion intermediate representation
+/tools/Xilinx/SDx/2018.3/bin/clang_wrapper  -I../src -I../libs/sds_utils  -Wall -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__  -target arm-none-eabi -mcpu=cortex-a9 -mfpu=vfpv3 -O0 -g       -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/arm-none-eabi -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include  -std=c++11  -emit-llvm -S /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.cpp -o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/src/graph.s
+Compiling /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.cpp
+arm-none-eabi-g++ -c -I../src -I../libs/sds_utils -Wall -O0 -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__ -MT/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/graph.o -MF/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/graph.d -MT/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/graph.o -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.cpp -o src/graph.o
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.h:5,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.cpp:1:
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_vector.h: In member function 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<double, long int>; _Alloc = std::allocator<std::pair<double, long int> >]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_vector.h:948:21: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+    _M_realloc_insert(end(), __x);
+    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_vector.h: In copy constructor 'std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::pair<double, long int>; _Alloc = std::allocator<std::pair<double, long int> >]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_vector.h:331:31: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+    std::__uninitialized_copy_a(__x.begin(), __x.end(),
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+           this->_M_impl._M_start,
+           ~~~~~~~~~~~~~~~~~~~~~~~
+           _M_get_Tp_allocator());
+           ~~~~~~~~~~~~~~~~~~~~~~
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.h:5,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.cpp:1:
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/vector.tcc: In member function 'void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {const std::pair<double, long int>&}; _Tp = std::pair<double, long int>; _Alloc = std::allocator<std::pair<double, long int> >]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/vector.tcc:394:7: note: parameter passing for argument of type 'std::vector<std::pair<double, long int> >::iterator {aka __gnu_cxx::__normal_iterator<std::pair<double, long int>*, std::vector<std::pair<double, long int> > >}' changed in GCC 7.1
+       vector<_Tp, _Alloc>::
+       ^~~~~~~~~~~~~~~~~~~
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.h:5,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/graph.cpp:1:
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >; _ForwardIterator = std::pair<double, long int>*; _Tp = std::pair<double, long int>]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:287:5: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+     __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+     ^~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:287:5: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:289:63: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+     { return std::uninitialized_copy(__first, __last, __result); }
+                                                               ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = std::pair<double, long int>*; _ForwardIterator = std::pair<double, long int>*; _Allocator = std::allocator<std::pair<double, long int> >]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:312:69: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+   _GLIBCXX_MAKE_MOVE_IF_NOEXCEPT_ITERATOR(__last), __result, __alloc);
+                                                                     ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >; _ForwardIterator = std::pair<double, long int>*]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:115:5: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+     uninitialized_copy(_InputIterator __first, _InputIterator __last,
+     ^~~~~~~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:115:5: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:134:41: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+  __uninit_copy(__first, __last, __result);
+                                         ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<std::pair<double, long int>*>; _ForwardIterator = std::pair<double, long int>*; _Tp = std::pair<double, long int>]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:287:5: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+     __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+     ^~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:287:5: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:289:63: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+     { return std::uninitialized_copy(__first, __last, __result); }
+                                                               ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In static member function 'static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >; _ForwardIterator = std::pair<double, long int>*; bool _TrivialValueTypes = false]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:76:9: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+         __uninit_copy(_InputIterator __first, _InputIterator __last,
+         ^~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:76:9: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const std::pair<double, long int>*, std::vector<std::pair<double, long int> > >' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<std::pair<double, long int>*>; _ForwardIterator = std::pair<double, long int>*]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:115:5: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+     uninitialized_copy(_InputIterator __first, _InputIterator __last,
+     ^~~~~~~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:115:5: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:134:41: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+  __uninit_copy(__first, __last, __result);
+                                         ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In static member function 'static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<std::pair<double, long int>*>; _ForwardIterator = std::pair<double, long int>*; bool _TrivialValueTypes = false]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:76:9: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+         __uninit_copy(_InputIterator __first, _InputIterator __last,
+         ^~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:76:9: note: parameter passing for argument of type 'std::move_iterator<std::pair<double, long int>*>' changed in GCC 7.1
+arm-none-eabi-objcopy --add-section .xdsdata=/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/graph.o.xml src/graph.o
+sds++ log file saved as /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_graph.log
+sds++ completed at Wed Oct 23 12:48:18 CEST 2019

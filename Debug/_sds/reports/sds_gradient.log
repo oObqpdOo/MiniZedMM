@@ -1,0 +1,53 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Oct 23 12:48:12 CEST 2019
+# Command line  : sds++ -Wall -O0 -g -I../src -I../libs/sds_utils -c -fmessage-length=0 -MTsrc/gradient.o -Wno-unused-label -MMD -MP -MFsrc/gradient.d -MTsrc/gradient.o -o src/gradient.o ../src/gradient.cpp -sds-sys-config mz_avnet -sds-proc Standalone -sds-pf /home/bqpd/workspace_sdsoc/Platforms/mz_avnet
+# Log file      : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_gradient.log
+# Journal file  : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_gradient.jou
+# Report file   : /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_gradient.rpt
+#-----------------------------------------------------------
+
+Analyzing source for RTL template usage
+/tools/Xilinx/SDx/2018.3/bin/rtl_template_extract  /home/bqpd/workspace_sdsoc/MiniZedMM/src/gradient.cpp  -save-query /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/src/gradient.rtlx  --  -c  -I../src -I../libs/sds_utils  -Wall -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__  
+    -target arm-none-eabi -mcpu=cortex-a9 -mfpu=vfpv3 -O0 -g -w      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/arm-none-eabi -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include  -std=c++11
+Create data motion intermediate representation
+/tools/Xilinx/SDx/2018.3/bin/clang_wrapper  -I../src -I../libs/sds_utils  -Wall -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__  -target arm-none-eabi -mcpu=cortex-a9 -mfpu=vfpv3 -O0 -g       -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include   -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1 -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/arm-none-eabi -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/backward -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/7.3.1/include-fixed -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include -I/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include  -std=c++11  -emit-llvm -S /home/bqpd/workspace_sdsoc/MiniZedMM/src/gradient.cpp -o /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/.llvm/src/gradient.s
+Compiling /home/bqpd/workspace_sdsoc/MiniZedMM/src/gradient.cpp
+arm-none-eabi-g++ -c -I../src -I../libs/sds_utils -Wall -O0 -g -fmessage-length=0 -Wno-unused-label -MMD -MP -D __SDSCC__ -MT/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/gradient.o -MF/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/gradient.d -MT/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/src/gradient.o -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard      -I /tools/Xilinx/SDx/2018.3/target/aarch32-none/include  -D HLS_NO_XIL_FPO_LIB  -I /tools/Xilinx/Vivado/2018.3/include /home/bqpd/workspace_sdsoc/MiniZedMM/src/gradient.cpp -o src/gradient.o
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/gradient.h:5,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/gradient.cpp:1:
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_vector.h: In copy constructor 'std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Dual; _Alloc = std::allocator<Dual>]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_vector.h:331:31: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+    std::__uninitialized_copy_a(__x.begin(), __x.end(),
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+           this->_M_impl._M_start,
+           ~~~~~~~~~~~~~~~~~~~~~~~
+           _M_get_Tp_allocator());
+           ~~~~~~~~~~~~~~~~~~~~~~
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/gradient.h:5,
+                 from /home/bqpd/workspace_sdsoc/MiniZedMM/src/gradient.cpp:1:
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >; _ForwardIterator = Dual*; _Tp = Dual]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:287:5: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+     __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+     ^~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:287:5: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:289:63: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+     { return std::uninitialized_copy(__first, __last, __result); }
+                                                               ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In function '_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >; _ForwardIterator = Dual*]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:115:5: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+     uninitialized_copy(_InputIterator __first, _InputIterator __last,
+     ^~~~~~~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:115:5: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:134:41: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+  __uninit_copy(__first, __last, __result);
+                                         ^
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h: In static member function 'static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >; _ForwardIterator = Dual*; bool _TrivialValueTypes = false]':
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:76:9: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+         __uninit_copy(_InputIterator __first, _InputIterator __last,
+         ^~~~~~~~~~~~~
+/tools/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/include/c++/7.3.1/bits/stl_uninitialized.h:76:9: note: parameter passing for argument of type '__gnu_cxx::__normal_iterator<const Dual*, std::vector<Dual> >' changed in GCC 7.1
+arm-none-eabi-objcopy --add-section .xdsdata=/home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/gradient.o.xml src/gradient.o
+sds++ log file saved as /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/reports/sds_gradient.log
+sds++ completed at Wed Oct 23 12:48:15 CEST 2019

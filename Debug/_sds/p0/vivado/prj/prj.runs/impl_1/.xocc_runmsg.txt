@@ -1,0 +1,2 @@
+Compiling (bitstream) accelerator binary: 
+Log file: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/runme.log

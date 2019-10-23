@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="3" DIGEST="">
+	<TOOL_VERSION Version="2018.3"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="em.avnet.com:minized:1.2" PART="xc7z007sclg225-1" ARCH="zynq" PACKAGE="clg225" DEVICE="7z007s" SPEED="-1"/>
+	<HIERARCHY Name="mz_avnet_wrapper"/>
+	<File Type="HW_HANDOFF" Name="mz_avnet.hwh" DESIGN_HIERARCHY="mz_avnet_i" BD_TYPE="DEFAULT_BD"/>
+	<File Type="BD_TCL" Name="mz_avnet_bd.tcl"/>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.c"/>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.h"/>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.c"/>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.h"/>
+	<File Type="PS_INIT_HELP" Name="ps7_init.html"/>
+	<File Type="PS_XMD_INIT" Name="ps7_init.tcl"/>
+	<File Type="BIT" Name="mz_avnet.bit"/>
+	<BOARD Type="NotIntegrated">
+		<BASEBOARD Name="em.avnet.com:minized:1.2">
+		</BASEBOARD>
+	</BOARD>
+	<USEDRESOURCES/>
+</Project>
+

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# hsi v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# 
+# Start of session at: Wed Oct 23 12:51:32 2019
+# Process ID: 28382
+# Current directory: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp
+# Command line: hsi -mode batch -notrace -quiet -source /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/create_bsp.tcl
+# Log file: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/hsi.log
+# Journal file: /home/bqpd/workspace_sdsoc/MiniZedMM/Debug/_sds/swstubs/standalone_bsp/hsi.jou
+#-----------------------------------------------------------
+CRITICAL WARNING: [Board 49-71] The board_part definition was not found for em.avnet.com:minized:part0:1.2. The project's board_part property was not set, but the project's part property was set to xc7z007sclg225-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.
+INFO: [Hsi 55-1698] elapsed time for repository loading 0 seconds
